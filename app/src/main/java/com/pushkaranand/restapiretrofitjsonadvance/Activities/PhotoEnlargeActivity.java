@@ -25,12 +25,6 @@ public class PhotoEnlargeActivity extends AppCompatActivity {
 
         imageView = (ImageView)findViewById(R.id.ivPhoto);
 
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://jsonplaceholder.typicode.com")
-                .addConverterFactory(
-                        GsonConverterFactory.create()
-                )
-                .build();
 
         Intent i = getIntent();
         String url = i.getStringExtra("url");

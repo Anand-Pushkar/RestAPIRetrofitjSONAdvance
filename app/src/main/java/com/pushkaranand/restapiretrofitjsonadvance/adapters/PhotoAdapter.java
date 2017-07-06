@@ -74,16 +74,9 @@ public class PhotoAdapter
             @Override
             public void onClick(View view) {
 
-                holder.thisView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
+                Log.d(TAG, "onClick: OnClicklistener");
 
-                        Log.d(TAG, "onClick: OnClicklistener");
-
-                        onPhotoClickListener.onPhotoClick(thisPhoto.getId(), thisPhoto.getUrl());
-                    }
-                });
-
+                onPhotoClickListener.onPhotoClick(thisPhoto.getId(), thisPhoto.getUrl());
             }
         });
 
