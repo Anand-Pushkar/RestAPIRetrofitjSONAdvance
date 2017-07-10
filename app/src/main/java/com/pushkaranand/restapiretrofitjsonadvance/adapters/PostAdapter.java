@@ -51,6 +51,7 @@ public class PostAdapter
         LayoutInflater li =
                 (LayoutInflater) context.getSystemService(
                         Context.LAYOUT_INFLATER_SERVICE);
+
         View itemView = li.inflate(R.layout.list_item_post, parent, false);
 
         return new PostViewHolder(itemView);
