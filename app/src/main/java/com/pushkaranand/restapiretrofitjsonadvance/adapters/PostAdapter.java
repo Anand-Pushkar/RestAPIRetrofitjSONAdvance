@@ -61,6 +61,8 @@ public class PostAdapter
     public void onBindViewHolder(PostViewHolder holder, int position) {
         Log.d(TAG, "onBindViewHolder: ");
         final Post thisPost = posts.get(position);
+        //posts is an arraylist of objects and thisPost is an object,
+        //so we are initialising thisPosts with the object at index = position of posts arraylist.
 
         holder.tvPostTitle.setText(thisPost.getTitle());
         holder.tvPostBody.setText(thisPost.getBody());
