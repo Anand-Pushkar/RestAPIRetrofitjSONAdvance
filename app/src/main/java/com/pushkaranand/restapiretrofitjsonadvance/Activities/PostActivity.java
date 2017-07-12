@@ -34,7 +34,7 @@ public class PostActivity extends AppCompatActivity {
 
         rvPostList = (RecyclerView)findViewById(R.id.rvPostList);
         rvPostList.setLayoutManager(new LinearLayoutManager(this));
-        postAdapter = new PostAdapter(this, new ArrayList<Post>());
+        postAdapter = new PostAdapter(this, new ArrayList<Post>());  //we are sending empty arraylist.
         rvPostList.setAdapter(postAdapter);
 
         postAdapter.setOnItemClickListener(new OnItemCLickListener() {
